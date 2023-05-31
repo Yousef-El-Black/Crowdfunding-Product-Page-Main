@@ -1,0 +1,223 @@
+/* Start Variables */
+
+:root {
+  --moderate-cyan: hsl(176, 50%, 47%);
+  --dark-cyan: hsl(176, 72%, 28%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 48%);
+}
+
+/* End Variables */
+
+/* Start Global Rules */
+
+body {
+  font-family: 'Commissioner', sans-serif;
+  font-size: 16px;
+  background-color: #eee;
+  /* Font Weights: 400, 500, 700 */
+}
+
+/* End Global Rules */
+
+/* Start Header */
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: white ;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  padding: 20px;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  padding: 10px 20px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+/* End Header */
+
+/* Start Landing */
+
+.landing img {
+  width: 100%;
+}
+
+/* End Landing */
+
+/* Start Project */ 
+
+.project {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-100px);
+}
+
+/* Start head */
+
+.head {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+  margin: 20px 0;
+}
+
+.head  > .image {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.head .title {
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+.head .info {
+  font-weight: 400;
+  color: var(--dark-gray);
+  padding: 5px;
+  margin: 10px;
+}
+
+.head .btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+}
+
+.head .btns .back-this-project {
+  padding: 20px;
+  background-color: var(--moderate-cyan);
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.head .btns .back-this-project:hover {
+  background-color: var(--dark-cyan);
+}
+
+.head .btns .bookmarked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  border-radius: 28px;
+  background-color: #eee;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.head .btns .bookmarked span {
+  padding: 10px;
+}
+
+/* End head */
+
+/* Start Analysis */
+
+.analysis {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.analysis .nums {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px 0;
+}
+
+.analysis .nums .num {
+  padding-right: 50px;
+}
+
+.analysis .nums .num:first-of-type {
+  border-right: 1px solid var(--dark-gray);
+}
+
+.analysis .nums .num:nth-child(2) {
+  border-right: 1px solid var(--dark-gray);
+}
+
+.analysis .nums .num h3 {
+  font-size: 30px;
+}
+
+.analysis .nums .num p {
+  padding-top: 10px;
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+.analysis .range {
+  width: 80%;
+  height: 10px;
+  margin: 20px 0 30px;
+  background-color: #eee;
+  border-radius: 5px;
+  position: relative;
+  /* transition: width 0.5s ease 1s; */
+}
+
+.analysis .range div {
+  content: "";
+  position: absolute;
+  width: 80%;  /* Edit To be Better */
+  height: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--moderate-cyan);
+  border-radius: 5px;
+  animation-name: range;
+  animation-duration: 1.5s;
+}
+
+/* End Analysis */
+
+/* End Project */ 
+
+/* Start Animation */
+
+@keyframes range {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+/* End Animation */
